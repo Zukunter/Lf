@@ -6,8 +6,8 @@ cmd basic-open ${{
         image/*)
             nohup mpv "$f" > /dev/null 2> /dev/null & ;;
         *)
-            nvim "$f" ;;
-    esac
+zsh -ic "nvim \"$f\"";;    
+esac
 }}
 map <enter> basic-open
 
